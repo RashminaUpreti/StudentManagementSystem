@@ -20,8 +20,9 @@ public class Program {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        
          StudentDAO studentDAO = new StudentDAOImpl();
+         Scanner input = new Scanner(System.in);
         while (true) {
            
             System.out.println("1.Insert student's info:");
