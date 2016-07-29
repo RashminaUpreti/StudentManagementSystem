@@ -33,7 +33,7 @@ public class StudentDAOImpl implements StudentDAO {
         for (int i = 0; i < studentList.length; i++) {
             Student s = studentList[i];
             if (s != null && s.getId() == id) {
-                s = null;
+               studentList[i] = null;
                 return true;
             }
         }
@@ -45,7 +45,7 @@ public class StudentDAOImpl implements StudentDAO {
         for (int i = 0; i < studentList.length; i++) {
             Student s = studentList[i];
             if (s != null && s.getId() == id) {
-               studentList[i] = null;
+               
                 return s;
             }
         }
